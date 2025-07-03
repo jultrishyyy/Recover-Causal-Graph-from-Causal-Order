@@ -6,6 +6,21 @@ This repository provides Python scripts to recover and visualize causal graphs. 
 
 ## 🚀 Getting Started
 
+
+### Python Version
+
+The scripts were tested using the following version of Python.
+
+```
+Python 3.12.9
+```
+
+You can check your own Python version by running this command in your terminal:
+
+```bash
+python --version
+```
+
 ### 1\. Installation
 
 To get started, clone the repository and install the necessary Python packages using the `requirements.txt` file.
@@ -34,7 +49,12 @@ root/
     └── Dataset1/
         ├── causal_order.txt
         ├── summary_matrix.npy
-        └── dataset1.csv
+        └── dataset2.csv
+    └── Dataset1/
+        ├── causal_order.txt
+        ├── summary_matrix.npy
+        └── dataset2.csv
+    ......
 ```
 
 **`causal_order.txt` Example:**
@@ -57,21 +77,21 @@ root/
 
 -----
 
-## 📊 Running the Analysis
+## 📊 Running the Script
 
-You can run the causal graph recovery process using the `run.py` script from the root directory.
+To run the script, execute the following command from the root directory:
 
-**Option 1: Command-Line Arguments**
+```bash
+python run.py --data_path path/to/your/data --output_path path/to/your/results
+```
 
-Specify the data and output paths as command-line arguments.
+For example, to process the `Web_Activity` dataset, use its relative path:
 
 ```bash
 python run.py --data_path data/Web_Activity/ --output_path result/Web_Activity/
 ```
 
-**Option 2: Direct Modification**
-
-For more flexibility, you can directly modify the paths and other parameters within the `run.py` script.
+Alternatively, you can directly modify the paths inside the `run.py` script and run it without arguments for more flexibility:
 
 ```bash
 python run.py
@@ -79,10 +99,17 @@ python run.py
 
 Upon completion, the recovered causal graph and evaluation metrics will be saved in the specified output directory within the `result/` folder.
 
-**Output Files:**
-
-  * `causal_graph.png`: A visualization of the recovered causal graph.
-  * `metrics.txt`: A text file containing evaluation metrics such as F1 score, true positives, and false positives.
+```
+root/
+└── data/
+    └── Dataset1/
+        ├── causal_graph.png
+        └── metrics.txt
+    └── Dataset1/
+        ├── causal_graph.png
+        └── metrics.txt
+    ......
+```
 
 -----
 
