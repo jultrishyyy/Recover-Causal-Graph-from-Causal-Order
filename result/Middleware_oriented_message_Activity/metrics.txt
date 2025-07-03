@@ -1,0 +1,47 @@
+
+
+--- METRICS ---
+
+Number of edges in ground truth (label summary matrix): 10
+Number of correctly predicted edges (True Positives): 1
+Number of correct non-edges (True Negatives): 35
+Number of incorrectly predicted edges (False Positives): 4
+Number of correct edges not predicted (False Negatives): 9
+Precision: 0.2000
+Recall: 0.1000
+F1 Score: 0.1333
+
+--- ORDER ANALYSIS---
+
+Predicted Causal Order: [0, 1, 2, 3, 5, 4, 6]
+Number of wrongly ordered cause-effect pairs: 0
+0 Wrongly ordered pairs in ground truth causal matrix:
+
+
+==================================================
+
+--- ESTIMATED SUMMARY MATRIX ---
+(Represents the estimated causal effect across all lags after pruning)
+
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+1,1,0,0,0,0,0
+1,0,0,0,0,0,0
+0,0,0,0,0,0,0
+1,0,0,0,0,0,0
+1,0,0,0,0,0,0
+
+
+
+==================================================
+
+--- CONTINUOUS SUMMARY MATRIX ---
+(Represents the max estimated causal effect across all lags before pruning)
+
+0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
+0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
+0.699177,0.051868,0.000000,0.000000,0.000000,0.000000,0.000000
+3.947054,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
+0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
+5073.133431,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
+33.555345,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
