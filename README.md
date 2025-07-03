@@ -50,7 +50,7 @@ root/
         ├── causal_order.txt
         ├── summary_matrix.npy
         └── dataset2.csv
-    └── Dataset1/
+    └── Dataset2/
         ├── causal_order.txt
         ├── summary_matrix.npy
         └── dataset2.csv
@@ -105,7 +105,7 @@ root/
     └── Dataset1/
         ├── causal_graph.png
         └── metrics.txt
-    └── Dataset1/
+    └── Dataset2/
         ├── causal_graph.png
         └── metrics.txt
     ......
