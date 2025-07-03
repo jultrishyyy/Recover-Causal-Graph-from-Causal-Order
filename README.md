@@ -23,7 +23,7 @@ python --version
 
 ### 1\. Installation
 
-To get started, clone the repository and install the necessary Python packages using the `requirements.txt` file.
+To get started, clone the repository and install the necessary Python packages using the `requirements.txt` file. (It is recommended to install packages and run all scripts within a virtual environment to avoid dependency conflicts.)
 
 ```bash
 git clone https://github.com/jultrishyyy/Recover-Causal-Graph-from-Causal-Order.git
